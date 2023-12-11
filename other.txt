@@ -1,28 +1,65 @@
-<div class="p-3 w-80 h-auto bg-white rounded-xl">
-			<div class="">
+		//Antigo horario 
+	<div class="p-3 w-80 h-auto bg-white rounded-xl">
+		<div class="">
 			<h3 class=" text-2xl text-center">Horários:</h3> <br>
 			<div class="opening_hours_wrapper"><span class="ohw-desc">
-					<ul class="text-center">
-						<li>
-							<label class=" bg-slate-100 p-1 px-6 rounded-lg text-sm">Segunda a Sexta</label> <br>
-							<span class="default text-xl">7<sup>00</sup> - 21<sup>30</sup></span>
-						</li>
-						<li class=" py-2">
-							<hr>
-						</li>
-						<li>
-							<label class=" bg-slate-100 p-1 px-6 rounded-lg text-sm">Sábado</label> <br>
-							<span class="default text-xl">9<sup>00</sup> - 13<sup>00</sup></span> /
-							<span class="default text-xl">15<sup>00</sup> - 20<sup>00</sup></span> 
-						</li>
-						<li  class=" py-2">
-							<hr>
-						</li>
-
-						<li>
-							<label class=" bg-slate-100 p-1 px-6 rounded-lg text-sm">Domingo e Feriados</label> <br>
-							<span class="default text-xl">Encerrado</span>
-						</li>
-					</ul>
-				</span></div>
+				<ul class="text-center">
+					<li>
+						<label class=" bg-slate-100 p-1 px-6 rounded-lg text-sm">Segunda a Sexta</label> <br>
+						<span class="default text-xl">7<sup>00</sup> - 21<sup>30</sup></span>
+					</li>
+					<li class=" py-2">
+						<hr>
+					</li>
+					<li>
+						<label class=" bg-slate-100 p-1 px-6 rounded-lg text-sm">Sábado</label> <br>
+						<span class="default text-xl">9<sup>00</sup> - 13<sup>00</sup></span> /
+						<span class="default text-xl">15<sup>00</sup> - 20<sup>00</sup></span> 
+					</li>
+					<li  class=" py-2">
+						<hr>
+					</li>
+					<li>
+						<label class=" bg-slate-100 p-1 px-6 rounded-lg text-sm">Domingo e Feriados</label> <br>
+						<span class="default text-xl">Encerrado</span>
+					</li>
+				</ul>
+			</span>
 		</div>
+	</div>
+
+
+
+		//Antigo contactos
+	<div class="p-3 w-80 h-auto defaultcolor rounded-xl">
+		<div class="">
+			<h3 class=" text-2xl text-center text-white">Contacto</h3> <br>
+			<div class="opening_hours_wrapper"><span class="ohw-desc">
+				<ul class="text-center">
+					<li>
+						<label class="bg-slate-100 p-1 px-6 rounded-lg text-sm">Morada</label> <br>
+						<span class="text-base text-white">Largo do Moeiro, n.º 58, 4415-267 Carvalhos - Pedroso</span>
+					</li>
+					<li  class=" py-1	">
+						<hr>
+					</li>
+					<li>
+						<label class=" bg-slate-100 p-1 px-6 rounded-lg text-sm">Telefone</label> <br>
+						<span class=" text-base text-white">93 440 52 50 -</span>  
+						<span class=" text-base text-white">91 101 88 44</span><br>
+						<span class=" text-base text-white">96 525 61 31 -</span>  
+						<span class=" text-base text-white">30 984 35 29</span> 
+
+					</li>
+					<li  class=" py-1">
+						<hr>
+					</li>
+					<li>
+						<label class=" bg-slate-100 p-1 px-6 rounded-lg text-sm">Email</label> <br>
+						<span class=" text-white text-base">geral@ginasioviv.com</span>
+					</li>
+				</ul>
+			</span>
+			</div>
+		</div>
+	</div>
