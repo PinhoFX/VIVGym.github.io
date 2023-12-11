@@ -6,3 +6,91 @@
   .defaultcolor{
     background-color: #ec6423;
   }
+
+
+  h1 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ec6423;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #A299AC;
+}
+
+/* Highlight des aktuellen Tages */
+table {
+border-collapse: collapse;
+}
+
+#activerow {
+    border-radius: 20px;
+    border: 0.5px solid #ec6423;
+}
+
+#activerow > td {
+    color: #ec6423;
+    font-weight: 600;
+}
+
+#activerow > td > span {
+    color: #ec6423;
+}
+
+/* Design der Tabelle */
+.opening-hours {
+  
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background-color: white;
+    padding: 1em;
+    max-width: 450px;
+    min-width: 320px;
+}
+
+
+.fvl-d > td {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    color: #A299AC;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.fvl-d > td > span {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #A299AC;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 382px) {
+
+.fvl-d > td {
+    font-size: 14px;
+    padding: 15px 5px;
+}
+
+#activerow {
+    border-radius: 20px;
+    border: none;
+    background-color: #ec6423;
+}
+
+#activerow > td {
+    color: white;
+    font-weight: 600;
+}
+
+#activerow > td > span {
+    color: white;
+}
+
+}
