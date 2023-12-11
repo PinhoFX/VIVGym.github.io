@@ -30,6 +30,13 @@ table {
 border-collapse: collapse;
 }
 
+#none{
+  display: none;
+}
+#activeday {
+  display: block;
+}
+
 #activerow {
     border-radius: 20px;
     border: 0.5px solid #ec6423;

@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 const time = () => {
+    
 
     const activerow = document.querySelector('#activerow');
 
@@ -51,31 +52,109 @@ const time = () => {
     const saturday = document.querySelector('.saturday');
     const sunday = document.querySelector('.sunday');
 
+    const monday2 = document.querySelector('.monday-2');
+    const tuesday2 = document.querySelector('.tuesday-2');
+    const wednesday2 = document.querySelector('.wednesday-2');
+    const thursday2 = document.querySelector('.thursday-2');
+    const friday2 = document.querySelector('.friday-2');
+    const saturday2 = document.querySelector('.saturday-2');
+    const sunday2 = document.querySelector('.sunday-2');
 
+    now = new Date;
+    let hora =  now.getHours() + ":" + now.getMinutes();
+
+
+    const isInRange = (start, end, time) => {
+        if(time < '00:00' || time > '23:59' || time.substring(3) > '59') {
+          console.log('Hora no válida');
+          return;
+          // o throw new Error('Hora no válida');
+        }
+        return time >= start && time <= end;
+      }
+      
+   
     switch (new Date().getDay()) {
 
         case 1:
             monday.setAttribute("id", "activerow");
+            monday2.setAttribute("id","activeday");
+            if(isInRange("07:00", "21:29",hora) == true ){
+                monday2.textContent ="Aberto";
+            }
+            else{
+                monday2.textContent ="Fechado";
+
+            }
+
             break;
         case 2:
             tuesday.setAttribute("id", "activerow");
+            tuesday2.setAttribute("id","activeday");
+
+            if(isInRange("07:00", "21:29",hora) == true){
+                tuesday2.textContent ="Aberto";
+            }
+            else{
+                tuesday2.textContent ="Fechado";
+
+            }
             break;
         case 3:
             wednesday.setAttribute("id", "activerow");
+            wednesday2.setAttribute("id","activeday");
+
+            if(isInRange("07:00", "21:29",hora) == true){
+                wednesday2.textContent ="Aberto";
+            }
+            else{
+                wednesday2.textContent ="Fechado";
+
+            }
             break;
         case 4:
             thursday.setAttribute("id", "activerow");
+            thursday2.setAttribute("id","activeday");
+
+            if(isInRange("07:00", "21:29",hora) == true){
+                thursday2.textContent ="Aberto";
+            }
+            else{
+                thursday2.textContent ="Fechado";
+
+            }
             break;
         case 5:
             friday.setAttribute("id", "activerow");
+            friday2.setAttribute("id","activeday");
+
+            if(isInRange("07:00", "21:29",hora) == true){
+                friday2.textContent ="Aberto";
+            }
+            else{
+                friday2.textContent ="Fechado";
+
+            }
             break;
         case 6:
             saturday.setAttribute("id", "activerow");
+            saturday2.setAttribute("id","activeday");
+
+            if(isInRange("09:00", "13:00",hora) == false && isInRange("15:00", "20:29",hora) == false  ){
+                saturday2.textContent ="Fechado";
+            }
+            else{
+                saturday2.textContent ="Aberto";
+
+            }
             break;
         case 0:
             sunday.setAttribute("id", "activerow");
+            sunday2.setAttribute("id","activeday");
+            sunday2.textContent ="Fechado";
             break;
     }
 
 }
 time();
+
