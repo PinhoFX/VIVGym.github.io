@@ -39,6 +39,41 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+
+const nav = document.getElementById('teste');
+window.onscroll = function () { 
+    if (document.body.scrollTop >= 200 ) {
+        nav.classList.add("bg-white");
+        nav.classList.remove("bg-transparent");
+      } else {
+        nav.classList.add("bg-transparent");
+        nav.classList.remove("bg-white");
+    }
+};
+
+
+// Make navbar transparent when it is on the top
+const navbar = document.getElementById('teste');
+const txt = document.getElementById('t1')
+const navbarHeight = navbar.getBoundingClientRect().height;
+
+window.addEventListener('scroll', function() {
+       // add padding top to show content behind navbar
+      if (window.scrollY > navbarHeight) {
+        navbar.classList.add('bg-white');      //adding CSS effect
+        navbar.classList.remove('bg-transparent');  // removing CSS effect
+
+       // remove padding top from body        
+      } else {
+
+        t1.classList.add('text-white');
+        t1.classList.remove('text-gray-400');
+        navbar.classList.add('bg-transparent');  // removing CSS effect
+        navbar.classList.remove('bg-white');  // removing CSS effect
+      } 
+  });
+
+
 const time = () => {
     
 
@@ -79,7 +114,7 @@ const time = () => {
         case 1:
             monday.setAttribute("id", "activerow");
             monday2.setAttribute("id","activeday");
-            if(isInRange("07:00", "21:29",hora) == true ){
+            if(isInRange("7:00", "21:29",hora) == true ){
                 monday2.textContent ="Aberto";
             }
             else{
@@ -92,7 +127,7 @@ const time = () => {
             tuesday.setAttribute("id", "activerow");
             tuesday2.setAttribute("id","activeday");
 
-            if(isInRange("07:00", "21:29",hora) == true){
+            if(isInRange("7:00", "21:29",hora) == true){
                 tuesday2.textContent ="Aberto";
             }
             else{
@@ -103,8 +138,7 @@ const time = () => {
         case 3:
             wednesday.setAttribute("id", "activerow");
             wednesday2.setAttribute("id","activeday");
-
-            if(isInRange("07:00", "21:29",hora) == true){
+            if(isInRange("7:00", "21:29",hora) == true){
                 wednesday2.textContent ="Aberto";
             }
             else{
@@ -116,7 +150,7 @@ const time = () => {
             thursday.setAttribute("id", "activerow");
             thursday2.setAttribute("id","activeday");
 
-            if(isInRange("07:00", "21:29",hora) == true){
+            if(isInRange("7:00", "21:29",hora) == true){
                 thursday2.textContent ="Aberto";
             }
             else{
@@ -127,8 +161,7 @@ const time = () => {
         case 5:
             friday.setAttribute("id", "activerow");
             friday2.setAttribute("id","activeday");
-
-            if(isInRange("07:00", "21:29",hora) == true){
+            if(isInRange("7:00", "21:29",hora) == true){
                 friday2.textContent ="Aberto";
             }
             else{
@@ -140,12 +173,11 @@ const time = () => {
             saturday.setAttribute("id", "activerow");
             saturday2.setAttribute("id","activeday");
 
-            if(isInRange("09:00", "13:00",hora) == false && isInRange("15:00", "20:29",hora) == false  ){
+            if(isInRange("9:00", "13:00",hora) == false && isInRange("15:00", "20:29",hora) == false  ){
                 saturday2.textContent ="Fechado";
             }
             else{
                 saturday2.textContent ="Aberto";
-
             }
             break;
         case 0:
@@ -156,5 +188,4 @@ const time = () => {
     }
 
 }
-time();
 
