@@ -65,9 +65,6 @@ window.addEventListener('scroll', function() {
 
        // remove padding top from body        
       } else {
-
-        t1.classList.add('text-white');
-        t1.classList.remove('text-gray-400');
         navbar.classList.add('bg-transparent');  // removing CSS effect
         navbar.classList.remove('bg-white');  // removing CSS effect
       } 
