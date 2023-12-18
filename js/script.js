@@ -126,7 +126,6 @@ const time = () => {
       
     switch (new Date().getDay()) {
         case 1:
-            alert(hora);
             monday.setAttribute("id", "activerow");
             monday2.setAttribute("id","activeday");
             if(isInRange("07:00", "21:29",hora) == true ){
