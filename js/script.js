@@ -91,19 +91,18 @@ const time = () => {
     const friday2 = document.querySelector('.friday-2');
     const saturday2 = document.querySelector('.saturday-2');
     const sunday2 = document.querySelector('.sunday-2');
-
     now = new Date;
     now.toLocaleTimeString('pt-BR');
 
     // vERIFICAÇÃO
-    if (now.getHours <9){
+    if (now.getHours() <=9){
         hs = "0" + now.getHours();
     }
     else{
         hs = now.getHours();
 
     }
-    if (now.getMinutes <9){
+    if (now.getMinutes() <=9){
         minutos = "0" + now.getMinutes();
     }
     else{
@@ -120,13 +119,14 @@ const time = () => {
           return;
           // o throw new Error('Hora no válida');
         }
+
+          console.log(time);
         return time >= start && time <= end;
       }
       
-   
     switch (new Date().getDay()) {
-
         case 1:
+            alert(hora);
             monday.setAttribute("id", "activerow");
             monday2.setAttribute("id","activeday");
             if(isInRange("07:00", "21:29",hora) == true ){
