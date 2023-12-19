@@ -56,15 +56,18 @@ window.onscroll = function () {
 const navbar = document.getElementById('teste');
 const txt = document.getElementById('t1')
 const navbarHeight = navbar.getBoundingClientRect().height;
-
+var image = document.getElementById("image");
 window.addEventListener('scroll', function() {
        // add padding top to show content behind navbar
       if (window.scrollY > navbarHeight) {
-        navbar.classList.add('bg-white');      //adding CSS effect
+        
+        navbar.classList.add('bg-white');     
+        image.src = "img/logo.png";
         navbar.classList.remove('bg-transparent');  // removing CSS effect
 
        // remove padding top from body        
       } else {
+        image.src = "img/logo-w.png"
         navbar.classList.add('bg-transparent');  // removing CSS effect
         navbar.classList.remove('bg-white');  // removing CSS effect
       } 
@@ -202,4 +205,5 @@ const time = () => {
     }
 
 }
+
 

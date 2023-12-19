@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./index.html","./atividades.html"],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        '128': '50px',
+      }
+    },
   },
   plugins: [],
 }
