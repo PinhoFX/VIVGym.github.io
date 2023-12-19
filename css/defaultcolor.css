@@ -62,13 +62,13 @@ border-collapse: collapse;
     min-width: 320px;
 }
 
-tbody{
+.tbody-horas{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%; 
 }
-tbody tr {
+.tbody-horas tr {
   display:flow-root;
 
  }
@@ -137,4 +137,61 @@ tr:first-child td:first-child {border-radius: 20px;}
     color: white;
 }
 
+}
+
+
+
+
+.table-aulas {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  /* To ensure that the columns have equal width */
+}
+
+.table-aulas th,
+.table-aulas td {
+  background-color: white;
+  width: 200px;
+  border: 1px solid rgb(153, 153, 153);
+  padding: 5px;
+  text-align: center;
+}
+
+.table-aulas th {
+  border: 1px solid #FF7A3D;
+
+  height:50px;
+  background-color: #FF7A3D;
+  color: white;
+}
+
+.table-aulas .now{
+  background-color: #ec6423;
+  color:white;
+}
+
+
+
+
+/* Barra lateral */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ec6423;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f77438;
 }
