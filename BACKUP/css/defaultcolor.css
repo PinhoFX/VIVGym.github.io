@@ -1,0 +1,215 @@
+
+.default{
+    color: #ec6423;
+  }
+  
+  .defaultcolor{
+    background-color: #ec6423;
+  }
+
+  .defaultbg{
+    background-color: #222;
+  }
+
+
+  .Tittles  {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ec6423;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #A299AC;
+}
+
+/* Highlight des aktuellen Tages */
+table {
+  height: 80%;
+border-collapse: collapse;
+}
+
+#none{
+  display: none;
+}
+#activeday {
+  display: block;
+}
+
+#activerow {
+    border-radius: 20px;
+    border: 0.5px solid #ec6423;
+}
+
+#activerow > td {
+    color: #ec6423;
+    font-weight: 600;
+}
+
+#activerow > td > span {
+    color: #ec6423;
+}
+
+/* Design der Tabelle */
+.opening-hours {
+    height: 397px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background-color: white;
+    padding: 1em;
+    max-width: 450px;
+    min-width: 320px;
+}
+
+.tbody-horas{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+}
+.tbody-horas tr {
+  display:flow-root;
+
+ }
+
+.fvl-d > td {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    color: #A299AC;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.fvl-d > td > span {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: #A299AC;
+  text-transform: uppercase;
+}
+
+.fvl-c > td {
+  font-size: 12px;
+  font-weight: 00;
+  letter-spacing: 1.2px;
+  color: #A299AC;
+  text-transform: uppercase;
+  padding: 0.8em;
+
+}
+
+
+
+.fvl-c > td > .span2 {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #A299AC;
+    text-transform: uppercase;
+}
+
+
+tr:first-child td:first-child {border-radius: 20px;}
+tr:first-child td:first-child {border-radius: 20px;}
+
+
+@media screen and (max-width: 382px) {
+
+.fvl-d > td {
+    font-size: 14px;
+    padding: 15px 5px;
+}
+
+#activerow {
+    border-radius: 20px;
+    border: none;
+    background-color: #ec6423;
+}
+
+#activerow > td {
+    color: white;
+    font-weight: 600;
+}
+
+#activerow > td > span {
+    color: white;
+}
+
+}
+
+
+
+
+.table-aulas {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  /* To ensure that the columns have equal width */
+}
+
+.table-aulas th,
+.table-aulas td {
+  background-color: white;
+  width: 200px;
+  border: 1px solid rgb(153, 153, 153);
+  padding: 5px;
+  text-align: center;
+}
+
+.table-aulas th {
+  border: 1px solid #FF7A3D;
+
+  height:50px;
+  background-color: #FF7A3D;
+  color: white;
+}
+
+.table-aulas .now{
+  background-color: #ec6423;
+  color:white;
+}
+
+
+
+
+/* Barra lateral */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ec6423;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f77438;
+}
+
+
+:root{
+  --content-width: min(100%,var(--container-max-width,1440px));
+  --gap: 0px 0px; 
+}
+
+.e-con-inner {
+  gap: var(--gap);
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  height: 100%;
+}

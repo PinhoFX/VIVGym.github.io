@@ -61,15 +61,15 @@ window.addEventListener('scroll', function() {
        // add padding top to show content behind navbar
       if (window.scrollY > navbarHeight) {
         
-        navbar.classList.add('bg-white');     
-        image.src = "img/logo.png";
+        navbar.classList.add('defaultbg');     
+        // image.src = "img/logo.png";
         navbar.classList.remove('bg-transparent');  // removing CSS effect
 
        // remove padding top from body        
       } else {
-        image.src = "img/logo-w.png"
+        // image.src = "img/logo-w.png"
         navbar.classList.add('bg-transparent');  // removing CSS effect
-        navbar.classList.remove('bg-white');  // removing CSS effect
+        navbar.classList.remove('defaultbg');  // removing CSS effect
       } 
   });
 

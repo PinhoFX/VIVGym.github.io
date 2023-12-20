@@ -7,6 +7,10 @@
     background-color: #ec6423;
   }
 
+  .defaultbg{
+    background-color: #222;
+  }
+
 
   .Tittles  {
     text-align: center;
@@ -198,7 +202,7 @@ tr:first-child td:first-child {border-radius: 20px;}
 
 
 :root{
-  --content-width: min(100%,var(--container-max-width,1140px));
+  --content-width: min(100%,var(--container-max-width,1440px));
   --gap: 0px 0px; 
 }
 
@@ -207,7 +211,5 @@ tr:first-child td:first-child {border-radius: 20px;}
   width: 100%;
   max-width: var(--content-width);
   margin: 0 auto;
-  padding-inline-start: 0;
-  padding-inline-end: 0;
   height: 100%;
 }

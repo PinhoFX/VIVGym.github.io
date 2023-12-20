@@ -5,6 +5,10 @@ module.exports = {
     extend: {
       height: {
         '128': '50px',
+      },
+      backdropBrightness: {
+        25: '.25',
+        175: '1.75',
       }
     },
   },

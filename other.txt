@@ -63,3 +63,30 @@
 			</div>
 		</div>
 	</div>
+
+
+
+
+
+	<!-- Quem Somos -->
+	<section class="bg-white">
+		<div class="container my-24 mx-auto md:px-6 bg-white">
+			<!-- Section: Design Block -->
+			<section class="mb-32 text-center">
+				<div class="flex justify-center">
+					<div class="max-w-[800px] text-center sm:justify-startflex flex-col justify-center">
+						<h2 class="mb-12 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl transition-all text-gray-600">
+							Quem somos?
+							
+						</h2>
+						<p class="text-lg text-neutral-900 dark:text-neutral-900 pl-9 pr-9 sm:p-0">
+							A nossa máxima preocupação e meta de todo o nosso esforço é o seu bem estar, para que, entre
+							nós, encontre as condições para recuperar as forças «de corpo e alma», que lhe permitam
+							encarar a vida com crescente otimismo.
+						</p>
+					</div>
+				</div>
+			</section>
+			<!-- Section: Design Block -->
+		</div>
+	</section>
