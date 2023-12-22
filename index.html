@@ -15,7 +15,7 @@
 			<a class="text-3xl font-bold leading-none" href="#">
 				<img src="img/logo-w.png" id="image" class=" h-4 xl:h-7 transition-all">
 			</a>
-			<div class="xl:hidden">
+			<div class="2xl:hidden">
 				<button class="navbar-burger flex items-center default p-3">
 					<svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 						<title>Mobile menu</title>
@@ -24,7 +24,7 @@
 				</button>
 			</div>
 			<ul
-				class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 xl:mx-auto xl:flex xl:items-center xl:w-auto xl:space-x-6">
+				class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 2xl:mx-auto 2xl:flex 2xl:items-center 2xl:w-auto 2xl:space-x-6">
 				<li><a class="text-sm text-white  hover:text-gray-400" href="#home">Home</a></li>
 				<li class="text-gray-300">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
@@ -33,7 +33,7 @@
 							d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 					</svg>
 				</li>
-				<li><a class="text-sm text-white  hover:text-gray-400" href="#about">Sobre nós</a></li>
+				<li><a class="text-sm text-white  hover:text-gray-400" href="#about">Sobre</a></li>
 				<li class="text-gray-300">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
 						class="w-4 h-4 current-fill" viewBox="0 0 24 24">
@@ -58,6 +58,18 @@
 					</svg>
 				</li>
 				<li><a class="text-sm text-white hover:text-gray-400" href="#aulas">Aulas</a></li>
+
+				<li class="text-gray-300">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+						class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+					</svg>
+				</li>
+				<li><a class="text-sm text-white hover:text-gray-400" href="#aulas">Galeria</a></li>
+
+
+
 
 				<li class="text-gray-300">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
@@ -130,9 +142,9 @@
 	<!-- Fim barra de navegação -->
 
 	<!--inicio  -->
-	<div class="bg-[url('../img/walpapper.png')] backdrop-blur-md backdrop-brightness-50 bg-cover block h-screen"
+	<div class="bg-[url('../img/Fotos/IMG_5929.jpg')] backdrop-blur-sm backdrop-brightness-50 bg-cover block h-screen"
 		id="home">
-		<div class="text-center backdrop-blur-md backdrop-brightness-50 h-full flex justify-center flex-col ">
+		<div class="text-center backdrop-blur-sm backdrop-brightness-50 h-full flex justify-center flex-col ">
 			<h1 class="flex justify-center p-2">
 				<img src="img/logo-w.png" class="h-8  xl:h-20 sm:h-14 transition-all filter drop-shadow-xl">
 			</h1>
@@ -186,8 +198,8 @@
             </div>
 
 
-            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 rounded">
+                <img class="object-cover object-center rounded-xl" alt="hero" src="img/Fotos/IMG_5937.jpg">
             </div>
 
         </div>
@@ -283,7 +295,7 @@
 				<!-- Horario -->
 
 				<div class="opening-hours rounded-xl">
-					<h1 class="Tittles p-1">Horários</h1>
+					<h1 class="Tittles p-1">Horário <br>de funcionamentos</h1>
 
 					<table>
 						<tbody class="tbody-horas">
@@ -361,23 +373,25 @@
 				<div class="opening-hours rounded-xl">
 					<h1 class="Tittles">Contactos</h1> <br>
 					<table class="flex flex-col justify-between">
-						<div>
+						<tbody class="Cont">
+							<div>
+								<tr class="fvl-c flex flex-col">
+									<td><span class="span2">Telfones</span></td>
+									<td>934 405 250 - 911 018 844</td>
+									<td>965 256 131 - 309 843 529</td>
+								</tr>
+							</div>
+
 							<tr class="fvl-c flex flex-col">
-								<td><span class="span2">Telfones</span></td>
-								<td>934 405 250 - 911 018 844</td>
-								<td>965 256 131 - 309 843 529</td>
+								<td><span class="span2">Morada</span></td>
+								<td>Largo do Moeiro, n.º 58 <br>4415-267 Carvalhos - Pedroso</td>
 							</tr>
-						</div>
 
-						<tr class="fvl-c flex flex-col">
-							<td><span class="span2">Morada</span></td>
-							<td>Largo do Moeiro, n.º 58 <br>4415-267 Carvalhos - Pedroso</td>
-						</tr>
-
-						<tr class="fvl-c flex flex-col">
-							<td><span class="span2">Email</span></td>
-							<td>geral@ginasioviv.com </td>
-						</tr>
+							<tr class="fvl-c flex flex-col">
+								<td><span class="span2">Email</span></td>
+								<td>geral@ginasioviv.com </td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
 
@@ -584,8 +598,8 @@
 	</section>
 
 	<!-- Mapa de Aulas -->
-	<section class="text-gray-600 body-font overflow-hidden bg-[url('../img/Aulas.png')] bg-cover " id="aulas">
-		<div class="backdrop-blur-md backdrop-brightness-[.3]">
+	<section class="text-gray-600 body-font overflow-hidden bg-[url('../img/Fotos/IMG_5847.jpg')] bg-cover " id="aulas">
+		<div class=" backdrop-blur-md backdrop-brightness-[.5]">
 			<div class="container px-5 py-24 mx-auto  e-con-inner">
 				<div class="flex flex-col w-full md:items-start md:text-left items-center text-center">
 					<h2
@@ -679,6 +693,79 @@
 			</div>
 		</div>
 	</section>
+
+
+	<div class="bg-white defaultbg h-auto py-6 sm:py-8 lg:py-12">
+		<div class="mx-auto max-w-screen-2xl px-4 md:px-8 e-con-inner  pb-20">
+			<div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+				<div class="flex items-center gap-12">
+					<h2 class="mb-2 text-5xl font-bold tracking-tight md:text-5xl xl:text-6xl transition-all text-white md:items-start md:text-left items-center text-center">
+						Galeria
+						<hr style="height: 4px;background-color: #FF7A3D ;width:100px; border:none;" class="mt-2">
+                	</h2>
+				</div>
+	
+				<a href="#"
+					class="inline-block rounded-lg border bg-white dark:bg-gray-700 dark:border-none px-4 py-2 text-center text-sm font-semibold text-gray-500 dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">
+					Ver Mais (Em Desenvolvimento)
+				</a>
+			</div>
+	
+			<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+				<!-- image - start -->
+				<a href="#"
+					class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+					<img src="img/Fotos/IMG_5825.jpg" loading="lazy" alt="Photo by Minh Pham" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+	
+					<div
+						class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+					</div>
+	
+					<span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Recepção</span>
+				</a>
+				<!-- image - end -->
+	
+				<!-- image - start -->
+				<a href="#"
+					class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+					<img src="img/Fotos/IMG_5929.jpg" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+	
+					<div
+						class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+					</div>
+	
+					<span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Cardio e Musculação</span>
+				</a>
+				<!-- image - end -->
+	
+				<!-- image - start -->
+				<a href="#"
+					class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+					<img src="img/Fotos/IMG_5847.jpg" loading="lazy" alt="Photo by Martin Sanchez" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+	
+					<div
+						class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+					</div>
+	
+					<span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Cycle</span>
+				</a>
+				<!-- image - end -->
+	
+				<!-- image - start -->
+				<a href="#"
+					class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+					<img src="img/Fotos/IMG_5834.jpg" loading="lazy" alt="Photo by Lorenzo Herrera" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+	
+					<div
+						class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+					</div>
+	
+					<span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Aulas</span>
+				</a>
+				<!-- image - end -->
+			</div>
+		</div>
+	</div>
 
 	<!-- Footer -->	
 	<footer class="defaultbg text-white text-center ">
