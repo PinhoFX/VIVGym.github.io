@@ -7,6 +7,16 @@
     background-color: #ec6423;
   }
 
+  .defaultcolorbtn{
+    transition: all 500ms;
+    background-color: #ec6423;
+  }
+
+
+  .defaultcolorbtn:hover{
+    background-color: #e28052;
+  }
+
   .defaultbg{
     background-color: #222;
   }
