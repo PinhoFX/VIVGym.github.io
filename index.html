@@ -6,9 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="dist/output.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/defaultcolor.css">
+  <link rel="stylesheet" href="css/swiper.css"/>
 </head>
 
-<body class="bg-white" onload="time()">
+<body class="bg-white" onload="time()" id="Body">
 	<!-- Barra de navegação -->
 	<div class="fixed w-full z-40 bg-transparent ease-in duration-400 transition" id="teste">
 		<nav class="relative px-4 py-4 h-20 flex justify-between items-center">
@@ -181,7 +182,7 @@
 	<div id="about" class="bg-white"></div>
 
 
-<!-- Quem somos 2 -->
+	<!-- Quem somos 2 -->
 	<div id="about" class="bg-white"></div>
     <section class="text-gray-900 body-font e-con-inner">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
@@ -279,7 +280,6 @@
  -->
 
 
-	
 	<!-- Horarios e Contactos -->
 	<section class="defaultbg " id="horarios">
 		<div class="e-con-inner container mx-auto flex px-5 py-24 md:flex-row flex-col items-center justify-center pt-52 pb-52 flex-wrap 2xl:justify-between">
@@ -720,9 +720,9 @@
 	
 			<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
 				<!-- image - start -->
-				<a href="#"
+				<a
 					class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-					<img src="img/Fotos/IMG_5825.jpg" loading="lazy" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+					<img src="img/Fotos/Receção1.jpg"  onclick="showModal('1')" loading="lazy" class="ph absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 	
 					<div
 						class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
@@ -733,9 +733,9 @@
 				<!-- image - end -->
 	
 				<!-- image - start -->
-				<a href="#"
+				<a
 					class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-					<img src="img/Fotos/IMG_5929.jpg" loading="lazy" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+					<img src="img/Fotos/CarMusc1.jpg" loading="lazy"  onclick="showModal('2')" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 	
 					<div
 						class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
@@ -746,9 +746,9 @@
 				<!-- image - end -->
 	
 				<!-- image - start -->
-				<a href="#"
+				<a 
 					class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-					<img src="img/Fotos/IMG_5847.jpg" loading="lazy" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+					<img src="img/Fotos/Cycle1.jpg" loading="lazy"  onclick="showModal('3')" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 	
 					<div
 						class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
@@ -759,9 +759,9 @@
 				<!-- image - end -->
 	
 				<!-- image - start -->
-				<a href="#"
+				<a 
 					class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-					<img src="img/Fotos/IMG_5834.jpg" loading="lazy" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+					<img src="img/Fotos/Aulas1.jpg" loading="lazy"  onclick="showModal('4')" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 	
 					<div
 						class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
@@ -773,6 +773,34 @@
 			</div>
 		</div>
 	</div>
+
+
+
+	<!-- Modal -->
+	<div id="modal"
+	class="hidden fixed top-0 left-0 z-50 w-screen h-screen bg-black/70 flex justify-center items-center">
+
+	<!-- The close button -->
+	
+
+		<div class="swiper flex flex-row place-content-center justify-center" style=" align-items:center; width:1000px; height: 600px; display:flex;">
+			<div class="flex swiper mySwiper">
+			  
+					<!-- AUTO LOAD -->
+					<a class=" close fixed z-80  text-white text-5xl font-bold" href="javascript:void(0)" style="z-index: 9000;"
+						onclick="closeModal()">&times;</a>
+				<div class="swiper-wrapper" id="loadimg"> 
+
+				</div>
+			</div>
+			
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		  </div>
+	  
+
+		
+</div>			
 
 	<!-- Footer -->	
 	<footer class="defaultbg text-white text-center ">
@@ -795,5 +823,15 @@
 
 </body>
 <script src="js/script.js" defer></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 
 </html>

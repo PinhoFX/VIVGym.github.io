@@ -231,3 +231,10 @@ tr:first-child td:first-child {border-radius: 20px;}
   margin: 0 auto;
   height: 100%;
 }
+
+
+
+.sem-scroll{
+  overflow: hidden;
+}
+

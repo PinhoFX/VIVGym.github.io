@@ -207,3 +207,62 @@ const time = () => {
 }
 
 
+
+
+let imgs = [
+    // FORZA
+{
+    id: "1", //sempre que fores adicionar 1 jogo muda o id 2 3 4 5 6...
+    Img: "img/Fotos/Receção1.jpg", 
+},
+
+{
+    id: "1", //sempre que fores adicionar 1 jogo muda o id 2 3 4 5 6...
+    Img: "img/Fotos/CarMusc1.jpg", 
+},
+{
+    id: "3", //sempre que fores adicionar 1 jogo muda o id 2 3 4 5 6...
+    Img: "img/Fotos/Aulas1.jpg", 
+},
+{
+    id: "4", //sempre que fores adicionar 1 jogo muda o id 2 3 4 5 6...
+    Img: "img/Fotos/Cycle1.jpg", 
+}
+
+
+];
+  // Get the modal by id
+  var modal = document.getElementById("modal");
+   var bg2 = document.getElementById("Body");
+
+
+  // Get the modal image tag
+  var modalImg = document.getElementById("modal-img");
+
+  // this function is called when a small image is clicked
+  function showModal(src) {
+    imgs.forEach((im) => {
+        if(im.id == src){
+
+            var info = "<div class='swiper-slide' style='display: flex; flex-wrap: wrap; align-content: center; justify-content: center; align-items: center;' > "+
+            "<img"+
+            " class='object-cover w-full' "+
+            " src='"+im.Img+"' "+
+            " alt='image' "+
+            "/>"+
+            " </div> ";
+        
+            $('#loadimg').append(info);
+        }
+     })
+
+       bg2.classList.add("sem-scroll");
+      modal.classList.remove('hidden');
+    //   modalImg.src = src;
+  }
+
+  // this function is called when the close button is clicked
+  function closeModal() {
+         bg2.classList.remove("sem-scroll");
+        modal.classList.add('hidden');
+  }
