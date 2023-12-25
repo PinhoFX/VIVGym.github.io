@@ -311,9 +311,21 @@ let imgs = [
     //   modalImg.src = src;
   }
 
+
+
+
+  var swiper = new Swiper('.mySwiper', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
   // this function is called when the close button is clicked
   function closeModal() {
+        swiper.slideTo(1, 1, false)
+        swiper.slidePrev(1, false)
         $('#loadimg').html("");
-         bg2.classList.remove("sem-scroll");
+        bg2.classList.remove("sem-scroll");
         modal.classList.add('hidden');
-  }
+        }
