@@ -712,17 +712,17 @@
                 	</h2>
 				</div>
 	
-				<a href="#"
+				<!-- <a href="#"
 					class="inline-block rounded-lg defaultcolorbtn px-4 py-2 text-center text-sm font-semibold text-gray-500 dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 md:px-8 md:py-3 md:text-base">
-					Ver Mais (Em Desenvolvimento)
-				</a>
+					Ver Mais
+				</a> -->
 			</div>
 	
 			<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
 				<!-- image - start -->
 				<a
 					class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-					<img src="img/Fotos/Receção1.jpg"  onclick="showModal('1')" loading="lazy" class="ph absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+					<img src="img/Fotos/Receção1.jpg"  onclick="showModal('1')" class="ph absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 	
 					<div
 						class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
@@ -735,7 +735,7 @@
 				<!-- image - start -->
 				<a
 					class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-					<img src="img/Fotos/CarMusc1.jpg" loading="lazy"  onclick="showModal('2')" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+					<img src="img/Fotos/CarMusc1.jpg"  onclick="showModal('2')" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 	
 					<div
 						class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
@@ -748,7 +748,7 @@
 				<!-- image - start -->
 				<a 
 					class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-					<img src="img/Fotos/Cycle1.jpg" loading="lazy"  onclick="showModal('3')" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+					<img src="img/Fotos/Cycle1.jpg"  onclick="showModal('3')" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 	
 					<div
 						class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
@@ -761,7 +761,7 @@
 				<!-- image - start -->
 				<a 
 					class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-					<img src="img/Fotos/Aulas1.jpg" loading="lazy"  onclick="showModal('4')" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+					<img src="img/Fotos/Aulas1.jpg"  onclick="showModal('4')" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 	
 					<div
 						class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
@@ -778,17 +778,18 @@
 
 	<!-- Modal -->
 	<div id="modal"
-	class="hidden fixed top-0 left-0 z-50 w-screen h-screen bg-black/70 flex justify-center items-center">
+	class="hidden fixed top-0 left-0 z-50 w-screen h-screen bg-black/85 flex justify-center items-center">
 
 	<!-- The close button -->
 	
 
-		<div class="swiper flex flex-row place-content-center justify-center" style=" align-items:center; width:1000px; height: 600px; display:flex;">
+		<div class="swiper flex flex-row place-content-center justify-center" style=" align-items:center; width:1100px; height: 600px; display:flex;">
 			<div class="flex swiper mySwiper">
-			  
-					<a class=" close fixed z-80  text-white text-5xl font-bold" href="javascript:void(0)" style="z-index: 9000;"
-						onclick="closeModal()">&times;</a>
+				
+				<a class=" close fixed z-80  text-white text-5xl font-bold" href="javascript:void(0)" style="z-index: 9000;"
+				onclick="closeModal()">&times;</a>
 				<div class="swiper-wrapper" id="loadimg"> 
+					
 
 				</div>
 			</div>
@@ -799,7 +800,7 @@
 	  
 
 		
-</div>			
+	</div>			
 
 	<!-- Footer -->	
 	<footer class="defaultbg text-white text-center ">
