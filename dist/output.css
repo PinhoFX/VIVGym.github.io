@@ -661,11 +661,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -1110,22 +1105,12 @@ video {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
-.bg-\[\#007bff\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 123 255 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#e6e6e6cf\] {
   background-color: #e6e6e6cf;
 }
 
 .bg-black\/85 {
   background-color: rgb(0 0 0 / 0.85);
-}
-
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .bg-blue-600 {
@@ -1182,6 +1167,16 @@ video {
 }
 
 .bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ec6423\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 100 35 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
@@ -1269,10 +1264,6 @@ video {
 
 .p-7 {
   padding: 1.75rem;
-}
-
-.p-8 {
-  padding: 2rem;
 }
 
 .px-3 {
@@ -1509,18 +1500,22 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#ec6423\] {
+  --tw-text-opacity: 1;
+  color: rgb(236 100 35 / var(--tw-text-opacity));
+}
+
+.text-\[\#fff\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .opacity-25 {
   opacity: 0.25;
 }
 
 .opacity-50 {
   opacity: 0.5;
-}
-
-.shadow-\[0_2px_10px_-3px_rgba\(6\2c 81\2c 237\2c 0\.3\)\] {
-  --tw-shadow: 0 2px 10px -3px rgba(6,81,237,0.3);
-  --tw-shadow-colored: 0 2px 10px -3px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-lg {
@@ -1536,6 +1531,14 @@ video {
 
 .outline-\[\#007bff\] {
   outline-color: #007bff;
+}
+
+.outline-\[\#\] {
+  outline-color: #;
+}
+
+.outline-\[\#ec6423\] {
+  outline-color: #ec6423;
 }
 
 .ring-indigo-300 {
@@ -1852,10 +1855,6 @@ video {
   .xl\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
-  }
-
-  .xl\:inline-block {
-    display: inline-block;
   }
 
   .xl\:h-20 {
