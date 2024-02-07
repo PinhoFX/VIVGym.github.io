@@ -136,20 +136,6 @@ tr:first-child td:first-child {border-radius: 20px;}
     padding: 15px 5px;
 }
 
-#activerow {
-    border-radius: 20px;
-    border: none;
-    background-color: #ec6423;
-}
-
-#activerow > td {
-    color: white;
-    font-weight: 600;
-}
-
-#activerow > td > span {
-    color: white;
-}
 
 }
 
@@ -167,16 +153,16 @@ tr:first-child td:first-child {border-radius: 20px;}
 .table-aulas td {
   background-color: white;
   width: 200px;
-  border: 1px solid rgb(153, 153, 153);
+  /* border: 1px solid rgb(153, 153, 153); */
   padding: 5px;
   text-align: center;
 }
 
 .table-aulas th {
-  border: 1px solid #FF7A3D;
+  border: 1px solid #ec6423;
 
   height:50px;
-  background-color: #FF7A3D;
+  background-color: #ec6423;
   color: white;
 }
 
