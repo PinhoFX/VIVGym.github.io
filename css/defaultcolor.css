@@ -2,6 +2,10 @@
 .default{
     color: #ec6423;
   }
+
+  .border-def{
+    border-color: #ec6423;
+  }
   
   .defaultcolor{
     background-color: #ec6423;
@@ -143,6 +147,7 @@ tr:first-child td:first-child {border-radius: 20px;}
 
 
 .table-aulas {
+  padding: 20px;
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
